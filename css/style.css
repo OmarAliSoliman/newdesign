@@ -20,13 +20,6 @@
     margin-top: 10px;   
 }
 
-.login-profile::before{
-    content: '';
-    width: 100%;
-    height: 250px;
-    background: url(../svg/blob-shape\ \(1\).svg);
-    background-size: cover;
-}
 
 .footer-wave::after{
     content: '';
@@ -40,6 +33,10 @@
 }
 
 @media(max-width: 576px){
+    body{
+        overflow: hidden;
+    }
+    
     .login-pic{
         visibility: hidden;
     }
