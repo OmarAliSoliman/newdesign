@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
@@ -29,21 +31,28 @@
     </ul>
     </div>
     <div class="row">
-      <div class="col s3">
-          <img class="login-pic" src="./svg/undraw_personalization_triu (1).svg" alt="login">
+      <div class="col l3 m12 hide-on-small-only">
+            <img class="login-pic hoverable" src="./svg/undraw_personalization_triu (1).svg" alt="login">
       </div>
-      <div class="col m9 s12 center-align">
+      <div class="col l9 m12 s12 center-align">
         <div class="login-profile">
           <img class="avatar" src="./svg/undraw_profile_pic_ic5t.svg" alt="">
+          <h3 class="welcome">Welcome</h3>
+          <form action="" class="left-align">
+              <label><i class="fas fa-user"></i>Username</label>
+              <input type="text" onfocus="make(0)" onblur="dele(0)"><br>
+              <label><i class="fas fa-key"></i>Password</label>
+              <input type="password"  onfocus="make(1)" onblur="dele(1)"><br>
+              <button class="btn waves-effect waves-pink" type="submit" name="action">login
+                  <i class="material-icons right">send</i>
+              </button>
+          </form>
         </div>
       </div>
     </div>
 
     <!-- start wave footer -->
     <div class="row footer-wave">
-      <div class="col s12">
-        
-      </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
