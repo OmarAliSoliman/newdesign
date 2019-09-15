@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.col{
+    padding: 0 !important;
+}
+
+.login-pic{
+    height: 400px;
+    padding-top: 10px;
+}
+
+.avatar{
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;   
+}
+
+.login-profile::before{
+    content: '';
+    width: 100%;
+    height: 250px;
+    background: url(../svg/blob-shape\ \(1\).svg);
+    background-size: cover;
+}
+
+.footer-wave::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: url(../svg/wave\ \(4\).svg);
+    background-size: cover;
+}
+
+@media(max-width: 576px){
+    .login-pic{
+        visibility: hidden;
+    }
+    .footer-wave::after{
+        visibility: hidden;
+    }
+}
